@@ -28,7 +28,6 @@ export default function Navbar() {
         { id: "education", label: "Education", icon: <GraduationCap className="h-5 w-5" />, to: "/education" },
         { id: "projects", label: "Projects", icon: <Briefcase className="h-5 w-5" />, to: "/projects" },
         { id: "contact", label: "Contact", icon: <Mail className="h-5 w-5" />, to: "/contact" },
-        /*{ id: "change-theme", label: "Change-Theme", icon: <Palette className="h-5 w-5" />, to: "/color" }*/
     ]
 
     const toggleMenu = () => {
@@ -57,10 +56,6 @@ export default function Navbar() {
                         </div>
                     ))}
                 </div>
-
-                {/*<div className="mb-4">
-                    <ColorSelector />
-                </div>*/}
             </nav>
 
             {isMobile && isOpen && (

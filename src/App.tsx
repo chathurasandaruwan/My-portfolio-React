@@ -6,11 +6,13 @@ import {Skills} from "./components/Skills.tsx";
 import {Education} from "./components/Education.tsx";
 import {Projects} from "./components/Projects.tsx";
 import {Contact} from "./components/Contact.tsx";
+import {ColorSelector} from "./components/ColorSelector.tsx";
 
 function App() {
     return (
             <Router>
                 <div className="relative min-h-screen bg-gradient-to-br from-indigo-950 to-black">
+                    <ColorSelector/>
                     <Navbar/>
                         <div className="absolute inset-0 overflow-hidden">
                             <div className="stars-container">
