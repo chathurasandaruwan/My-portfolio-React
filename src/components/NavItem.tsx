@@ -8,7 +8,7 @@ interface NavItemProps {
     active?: boolean
 }
 
-export const NavItem: FC<NavItemProps> = ({ icon, label, to, active }) => {
+export const NavItem: FC<NavItemProps> = ({icon, label, to, active}) => {
     return (
         <Link to={to}>
             <div
@@ -18,7 +18,8 @@ export const NavItem: FC<NavItemProps> = ({ icon, label, to, active }) => {
                 aria-label={label}
             >
                 {icon}
-                <span className="absolute left-16 z-50 hidden whitespace-nowrap rounded-md bg-black/80 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 md:block">
+                <span
+                    className="absolute left-16 z-50 hidden whitespace-nowrap rounded-md bg-black/80 px-2 py-1 text-xs text-white opacity-0 transition-opacity group-hover:opacity-100 md:block">
           {label}
         </span>
             </div>
