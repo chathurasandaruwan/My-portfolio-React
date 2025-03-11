@@ -1,10 +1,12 @@
 import {Palette} from "lucide-react";
 import {useState} from "react";
+import {Color, useColor} from "../context/ColorContext.tsx";
 
 export function ColorSelector() {
     const [isOpen, setIsOpen] = useState(false);
-    const [selectedColor, setSelectedColor] = useState<string>();
-    console.log(selectedColor)
+    const { color, setColor } = useColor()
+
+    console.log(color)
 
     const colors = [
         { value: "white", label: "White" },
@@ -31,7 +33,7 @@ export function ColorSelector() {
                             <div
                                 key={color.value}
                                 onClick={() => {
-                                    setSelectedColor(color.value);
+                                    setColor(color.value as Color);
                                     setIsOpen(false);
                                 }}
                                 className="flex cursor-pointer items-center gap-2 rounded-md px-3 py-2 transition-colors hover:bg-white/10"

@@ -1,7 +1,7 @@
 import type React from "react"
 import { createContext, useState, useContext } from "react"
 
-type Color = "white" | "green" | "yellow" | "blue"
+export type Color = "white" | "green" | "yellow" | "blue"
 
 type ColorContextType = {
     color: Color
