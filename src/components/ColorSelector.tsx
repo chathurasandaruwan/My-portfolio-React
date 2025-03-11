@@ -4,9 +4,7 @@ import {Color, useColor} from "../context/ColorContext.tsx";
 
 export function ColorSelector() {
     const [isOpen, setIsOpen] = useState(false);
-    const { color, setColor } = useColor()
-
-    console.log(color)
+    const { setColor } = useColor()
 
     const colors = [
         { value: "white", label: "White" },
