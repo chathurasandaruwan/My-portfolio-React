@@ -1,5 +1,3 @@
-"use client"
-
 import {useEffect, useState} from "react"
 
 export const TypewriterEffect = ({words, className, cursorClassName,}: {
@@ -57,7 +55,7 @@ export const TypewriterEffect = ({words, className, cursorClassName,}: {
                 }
                 return null
             })}
-            <span className={`ml-1 inline-block w-[2px] h-[1.2em] bg-primary animate-blink ${cursorClassName}`}/>
+            <span className={`ml-1 inline-block w-[2px] h-[1.2em] bg-white animate-blink ${cursorClassName}`}/>
         </div>
     )
 }

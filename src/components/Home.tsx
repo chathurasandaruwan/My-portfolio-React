@@ -1,4 +1,5 @@
 import {useColor} from "../context/ColorContext.tsx";
+import {TypewriterEffect} from "./TypeWriterEffect.tsx";
 
 export function Home() {
     const { color } = useColor()
@@ -9,6 +10,22 @@ export function Home() {
         yellow: "#facc15",
         blue: "#60a5fa",
     }[color]
+    const words = [
+        {
+            text: "Frontend Developer",
+        },
+        {
+            text: "Backend Developer",
+        },
+        {
+            text: "UI/UX Designer",
+            className: "text-primary",
+        },
+        {
+            text: "full stack developer",
+            className: "text-primary",
+        },
+    ]
 
     return (
         <section className="relative min-h-screen">
@@ -54,6 +71,9 @@ export function Home() {
                     <h1 className="text-4xl md:text-6xl font-bold tracking-tighter pb-4">
                         Chathura Sandaruwan
                     </h1>
+                    <div className="h-16" style={{animationDelay: "0.5s"}}>
+                        <TypewriterEffect words={words} className="text-xl md:text-3xl font-medium"/>
+                    </div>
                     <p className="text-xl md:py-8" style={{opacity: 0.8}}>
                         Welcome to my portfolio website. Navigate using the sidebar to explore my projects and learn
                         more
