@@ -11,7 +11,7 @@ type ColorContextType = {
 const ColorContext = createContext<ColorContextType | undefined>(undefined)
 
 export const ColorProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-    const [color, setColor] = useState<Color>("white")
+    const [color, setColor] = useState<Color>("blue")
 
     return <ColorContext.Provider value={{ color, setColor }}>{children}</ColorContext.Provider>
 }
