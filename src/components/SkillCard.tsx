@@ -5,10 +5,11 @@ interface SkillCardProps {
     name: string;
     icon:  typeof Icon;
     level: number;
-    style: React.CSSProperties;
+    style: string;
+    themeColor: string;
 }
 
-const SkillCard: React.FC<SkillCardProps> = ({ name, icon: IconComponent, level ,style}) => {
+const SkillCard: React.FC<SkillCardProps> = ({ name, icon: IconComponent, level ,style, themeColor}) => {
     const [isVisible, setIsVisible] = useState(false);
     const progressRef = useRef<HTMLDivElement>(null);
 
@@ -37,11 +38,17 @@ const SkillCard: React.FC<SkillCardProps> = ({ name, icon: IconComponent, level 
     }, []);
 
     return (
-        <div className="bg-white p-6 rounded-xl  transition-shadow">
-            <div className="flex items-center gap-4">
-                <IconComponent className="w-8 h-8 text-indigo-600" style={style}/>
+        <div className="p-6 rounded-xl" style={{
+            backgroundColor: `${themeColor}6A`, // 60% opacity in HEX (1A = 10%)
+        }}>
+            <div className=" group flex items-center gap-4">
+                <div
+                    className={`${style} w-12 h-12 rounded-2xl flex items-center justify-center text-white mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300`}
+                >
+                    <IconComponent />
+                </div>
                 <div className="flex-1">
-                    <h3 className="font-semibold text-lg text-gray-800">{name}</h3>
+                    <h3 className="font-semibold text-lg text-black">{name}</h3>
                     <div ref={progressRef} className="mt-2 bg-gray-200 rounded-full h-2">
                         <div
                             className="bg-indigo-600 h-2 rounded-full transition-all duration-1000 ease-out"
@@ -50,6 +57,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ name, icon: IconComponent, level 
                                 transitionDelay: '100ms'
                             }}
                         />
+                        <div className="text-sm text-right text-muted-foreground text-black">{level}%</div>
                     </div>
                 </div>
             </div>
