@@ -51,8 +51,9 @@ const SkillCard: React.FC<SkillCardProps> = ({ name, icon: IconComponent, level 
                     <h3 className="font-semibold text-lg text-black">{name}</h3>
                     <div ref={progressRef} className="mt-2 bg-gray-200 rounded-full h-2">
                         <div
-                            className="bg-indigo-600 h-2 rounded-full transition-all duration-1000 ease-out"
+                            className="bg-indigo-500 h-2 rounded-full transition-all duration-1000 ease-out"
                             style={{
+                                // backgroundColor: `${themeColor}`,
                                 width: isVisible ? `${level}%` : '0%',
                                 transitionDelay: '100ms'
                             }}

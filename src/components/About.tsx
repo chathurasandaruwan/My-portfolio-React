@@ -35,7 +35,7 @@ export function About() {
                     real-world challenges in the software industry.
                 </p>
                 <button type='button'
-                        className=" group mt-6 inline-flex items-center rounded-full px-12 py-3 text-sm bg-white/10 font-medium hover:bg-white/20 hover:cursor-pointer border"
+                        className="group mt-6 inline-flex items-center rounded-full px-12 py-3 text-sm bg-white/10 font-medium hover:bg-white/20 hover:cursor-pointer border"
                         style={{borderColor: themeColor}}>
                     Download CV
                     <ArrowDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1"/>

@@ -1,5 +1,5 @@
 import {useColor} from "../context/ColorContext.tsx";
-import {Code, Database, Figma, GitBranch, Globe, Layers, Smartphone, Zap} from "lucide-react";
+import {Code, Database, Figma, FileJson, GitBranch, Globe, Terminal} from "lucide-react";
 import SkillCard from "./SkillCard.tsx";
 
 export function Skills() {
@@ -15,20 +15,20 @@ export function Skills() {
 
     const skills = [
         {
-            name: "React",
+            name: "Java & Spring Boot",
             icon: Code,
             color: "bg-blue-500/90",
             level: 95,
         },
         {
-            name: "TypeScript",
+            name: "React & React Native",
             icon: Code,
             color: "bg-blue-700/90",
             level: 90,
         },
         {
-            name: "Tailwind CSS",
-            icon: Layers,
+            name: "JavaScript/TypeScript",
+            icon: FileJson,
             color: "bg-cyan-500/90",
             level: 95,
         },
@@ -36,17 +36,17 @@ export function Skills() {
             name: "UI/UX Design",
             icon: Figma,
             color: "bg-purple-500/90",
-            level: 85,
+            level: 75,
         },
         {
-            name: "Responsive Design",
-            icon: Smartphone ,
+            name: "Python",
+            icon: Terminal ,
             color: "bg-green-500/90",
-            level: 90,
+            level: 80,
         },
         {
-            name: "Performance",
-            icon: Zap ,
+            name: "HTML/CSS",
+            icon: Globe ,
             color: "bg-yellow-500/90",
             level: 85,
         },
@@ -63,15 +63,15 @@ export function Skills() {
             level: 85,
         },
         {
-            name: "Database Design",
+            name: "MongoDB & MySQL",
             icon: Database,
             color: "bg-indigo-500/90",
-            level: 75,
+            level: 85,
         },
     ]
 
     return (
-        <section className="relative min-h-screen w-full overflow-hidden md:pl-30 md:pt-20 lg:px-30 lg:pl-40 ">
+        <section className="relative min-h-screen w-full overflow-hidden md:pl-30 md:pt-10 lg:px-30 lg:pl-40 ">
             <div
                 className="container mx-auto px-4 py-18 md:py-16"
                 style={{color: themeColor}}
@@ -93,6 +93,7 @@ export function Skills() {
                             icon={skill.icon}
                             level={skill.level}
                             style={skill.color}
+                            themeColor={themeColor}
                         />
                     ))}
                 </div>
