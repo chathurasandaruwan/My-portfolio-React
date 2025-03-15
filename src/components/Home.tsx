@@ -102,7 +102,7 @@ export function Home() {
                         />
                         {/* Profile image */}
                         <img
-                            src="src/assets/images/my-img.jpeg"
+                            src="src/assets/images/homeImg.jpeg"
                             alt="Profile"
                             className="object-cover w-full h-full rounded-full relative z-10"
                         />
