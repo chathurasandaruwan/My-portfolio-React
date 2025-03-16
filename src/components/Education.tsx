@@ -1,5 +1,6 @@
 import {useColor} from "../context/ColorContext.tsx";
 import EducationCard from "./EducationCard.tsx";
+import {CertificationSlider} from "./CertificationSlider.tsx";
 
 export function Education() {
 
@@ -39,13 +40,17 @@ export function Education() {
                 className="container mx-auto px-4 py-18 md:py-16"
                 style={{color: themeColor}}
             >
+                {/*education details*/}
                 <h1 className="mb-6 text-2xl font-bold md:text-5xl">Educational Journey</h1>
-                <div className="flex flex-wrap md:flex-nowrap gap-3 w-fit justify-center">
+                <div className="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2  gap-6">
                     {educationDetails.map(({content, name, imgSrc, company}, key) => (
                         <EducationCard key={key} content={content} name={name} imgSrc={imgSrc} company={company}
                                        classes='reveal-up' themeColor={themeColor}/>
                     ))}
                 </div>
+                {/*certifications img view*/}
+                <h1 className="text-4xl font-bold mb-8 text-center pt-10">My Certifications</h1>
+                <CertificationSlider/>
             </div>
         </section>
     );
