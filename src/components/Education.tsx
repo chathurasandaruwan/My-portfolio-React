@@ -1,6 +1,7 @@
 import {useColor} from "../context/ColorContext.tsx";
 import EducationCard from "./EducationCard.tsx";
 import {CertificationSlider} from "./CertificationSlider.tsx";
+import {Footer} from "./Footer.tsx";
 
 export function Education() {
 
@@ -37,7 +38,7 @@ export function Education() {
     return (
         <section className="relative min-h-screen w-full overflow-hidden md:pl-30 md:pt-20 lg:px-30 lg:pl-40 ">
             <div
-                className="container mx-auto px-4 py-18 md:py-16"
+                className="container mx-auto px-4 pt-18 pb-6 md:py-16"
                 style={{color: themeColor}}
             >
                 {/*education details*/}
@@ -51,6 +52,7 @@ export function Education() {
                 {/*certifications img view*/}
                 <h1 className="text-4xl font-bold mb-8 text-center pt-10">My Certifications</h1>
                 <CertificationSlider/>
+                <Footer/>
             </div>
         </section>
     );

@@ -1,6 +1,7 @@
 import {useColor} from "../context/ColorContext.tsx";
 import {Code, Database, Figma, FileJson, GitBranch, Globe, Terminal} from "lucide-react";
 import SkillCard from "./SkillCard.tsx";
+import {Footer} from "./Footer.tsx";
 
 export function Skills() {
 
@@ -40,25 +41,25 @@ export function Skills() {
         },
         {
             name: "Python",
-            icon: Terminal ,
+            icon: Terminal,
             color: "bg-green-500/90",
             level: 80,
         },
         {
             name: "HTML/CSS",
-            icon: Globe ,
+            icon: Globe,
             color: "bg-yellow-500/90",
             level: 85,
         },
         {
             name: "Git & GitHub",
-            icon: GitBranch ,
+            icon: GitBranch,
             color: "bg-orange-500/90",
             level: 80,
         },
         {
             name: "RESTful APIs",
-            icon: Globe ,
+            icon: Globe,
             color: "bg-red-500/90",
             level: 85,
         },
@@ -73,7 +74,7 @@ export function Skills() {
     return (
         <section className="relative min-h-screen w-full overflow-hidden md:pl-30 md:pt-10 lg:px-30 lg:pl-40 ">
             <div
-                className="container mx-auto px-4 py-18 md:py-16"
+                className="container mx-auto px-4 pt-18 pb-6 md:py-16"
                 style={{color: themeColor}}
             >
                 <div className="text-center mb-16">
@@ -97,7 +98,8 @@ export function Skills() {
                         />
                     ))}
                 </div>
-                </div>
+                <Footer/>
+            </div>
         </section>
-);
+    );
 }

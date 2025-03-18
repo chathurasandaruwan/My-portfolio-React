@@ -124,7 +124,7 @@ export function Projects() {
     return (
         <section className="relative min-h-screen w-full overflow-hidden md:pl-30 md:pt-20 lg:px-30 lg:pl-40 ">
             <div
-                className="container mx-auto px-4 py-18 md:py-16"
+                className="container mx-auto px-4 pt-18 pb-6 md:py-16"
                 style={{color: themeColor}}
             >
                 <h1 className="mb-3 text-2xl font-bold md:text-5xl">My Work</h1>

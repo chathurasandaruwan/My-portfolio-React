@@ -1,5 +1,6 @@
 import {useColor} from "../context/ColorContext.tsx";
 import {ArrowDown} from "lucide-react";
+import {Footer} from "./Footer.tsx";
 
 export function About() {
 
@@ -15,7 +16,7 @@ export function About() {
     return (
         <section className="relative min-h-screen w-full overflow-hidden md:pl-30 md:pt-20 lg:px-30 lg:pl-40 ">
             <div
-                className="container mx-auto px-4 py-18 md:py-16"
+                className="container mx-auto px-4 pt-18 pb-6 md:py-16"
                 style={{color: themeColor}}
             >
                 <h1 className="mb-6 text-4xl font-bold md:text-6xl">About Me</h1>
@@ -40,6 +41,7 @@ export function About() {
                     Download CV
                     <ArrowDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1"/>
                 </button>
+                <Footer/>
             </div>
         </section>
     );
