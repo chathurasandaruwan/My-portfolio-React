@@ -1,15 +1,15 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { XIcon as Icon } from 'lucide-react';
+import React, {useEffect, useRef, useState} from 'react';
+import {XIcon as Icon} from 'lucide-react';
 
 interface SkillCardProps {
     name: string;
-    icon:  typeof Icon;
+    icon: typeof Icon;
     level: number;
     style: string;
     themeColor: string;
 }
 
-const SkillCard: React.FC<SkillCardProps> = ({ name, icon: IconComponent, level ,style, themeColor}) => {
+const SkillCard: React.FC<SkillCardProps> = ({name, icon: IconComponent, level, style, themeColor}) => {
     const [isVisible, setIsVisible] = useState(false);
     const progressRef = useRef<HTMLDivElement>(null);
 
@@ -38,14 +38,17 @@ const SkillCard: React.FC<SkillCardProps> = ({ name, icon: IconComponent, level 
     }, []);
 
     return (
-        <div className="p-6 rounded-xl" style={{
-            backgroundColor: `${themeColor}6A`, // 60% opacity in HEX (1A = 10%)
-        }}>
+        <div className="p-6 rounded-xl"
+             style={{
+                 backgroundColor: `${themeColor}6A`, // 60% opacity in HEX (1A = 10%)
+             }}
+             data-aos="fade-up-left"
+             data-aos-delay="50">
             <div className=" group flex items-center gap-4">
                 <div
                     className={`${style} w-12 h-12 rounded-2xl flex items-center justify-center text-white mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300`}
                 >
-                    <IconComponent />
+                    <IconComponent/>
                 </div>
                 <div className="flex-1">
                     <h3 className="font-semibold text-lg text-black">{name}</h3>

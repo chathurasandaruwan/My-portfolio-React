@@ -15,6 +15,8 @@ export function Contact() {
             <div
                 className="container mx-auto px-4 py-18 md:py-16"
                 style={{color: themeColor}}
+                data-aos="fade-left"
+                data-aos-delay="50"
             >
                 <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 shadow-xl">
                     <h2 className="text-3xl font-bold mb-8 text-center">Get in Touch</h2>
@@ -22,21 +24,27 @@ export function Contact() {
                     <div className="grid md:grid-cols-2 gap-8">
                         {/* Contact Information */}
                         <div className="space-y-6">
-                            <div className="flex items-center space-x-4 ">
+                            <div className="flex items-center space-x-4 "
+                                 data-aos="fade-up-left"
+                                 data-aos-delay="50">
                                 <Mail className="w-6 h-6"/>
                                 <span className="hover:text-white transition-colors">
                                     chathurasandaruwan122@gmail.com
                                 </span>
                             </div>
 
-                            <div className="flex items-center space-x-4">
+                            <div className="flex items-center space-x-4"
+                                 data-aos="fade-up-left"
+                                 data-aos-delay="50">
                                 <Phone className="w-6 h-6"/>
                                 <span className="hover:text-white transition-colors">
                                     + (94) 776-826-398
                                 </span>
                             </div>
 
-                            <div className="flex items-center space-x-4">
+                            <div className="flex items-center space-x-4"
+                                 data-aos="fade-up-left"
+                                 data-aos-delay="50">
                                 <MapPin className="w-6 h-6"/>
                                 <span className="hover:text-white transition-colors">
                                     Yatadolawaththa, Mathugama, Sri Lanka
@@ -48,6 +56,8 @@ export function Contact() {
                                     href="https://linkedin.com"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    data-aos="fade-up-left"
+                                    data-aos-delay="50"
                                 >
                                     <Linkedin className="w-6 h-6 hover:cursor-pointer hover:scale-110"/>
                                 </a>
@@ -55,6 +65,8 @@ export function Contact() {
                                     href="https://github.com/chathurasandaruwan"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    data-aos="fade-up-left"
+                                    data-aos-delay="50"
                                 >
                                     <Github className="w-6 h-6 hover:cursor-pointer hover:scale-110"/>
                                 </a>

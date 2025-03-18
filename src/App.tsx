@@ -7,8 +7,17 @@ import {Education} from "./components/Education.tsx";
 import {Projects} from "./components/Projects.tsx";
 import {Contact} from "./components/Contact.tsx";
 import {ColorSelector} from "./components/ColorSelector.tsx";
+import {useEffect} from "react";
+import AOS from "aos";
 
 function App() {
+    useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            offset: 100,
+        });
+    }, []);
     return (
             <Router>
                 <div className="relative min-h-screen bg-gradient-to-br from-indigo-950 to-black">

@@ -74,7 +74,9 @@ export const CertificationSlider: React.FC = () => {
     }, [currentIndex]);
 
     return (
-        <div className="relative w-full max-w-4xl mx-auto px-4 py-8">
+        <div className="relative w-full max-w-4xl mx-auto px-4 py-8"
+             data-aos="fade-up-left"
+             data-aos-delay="50">
             <div className="relative aspect-[16/11] overflow-hidden rounded-2xl shadow-2xl">
                 {/* Main Image */}
                 <div className="absolute w-full h-full">

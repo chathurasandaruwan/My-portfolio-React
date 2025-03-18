@@ -126,6 +126,8 @@ export function Projects() {
             <div
                 className="container mx-auto px-4 pt-18 pb-6 md:py-16"
                 style={{color: themeColor}}
+                data-aos="fade-left"
+                data-aos-delay="50"
             >
                 <h1 className="mb-3 text-2xl font-bold md:text-5xl">My Work</h1>
                 <p className="text-lg md:text-xl py-4 md:pb-10" style={{opacity: 0.8}}>
@@ -147,7 +149,9 @@ export function Projects() {
                     {filteredProjects.map((project, index) => (
                         <div key={index} className="group">
                             <div
-                                className="overflow-hidden border border-border/50 bg-background/50 backdrop-blur-sm h-full hover:shadow-lg transition-shadow duration-300">
+                                className="overflow-hidden border border-border/50 bg-background/50 backdrop-blur-sm h-full hover:shadow-lg transition-shadow duration-300"
+                                data-aos="fade-up-left"
+                                data-aos-delay="50">
                                 <div className="relative overflow-hidden">
                                     <div className="aspect-video overflow-hidden">
                                         <img

@@ -1,9 +1,9 @@
 import {useColor} from "../context/ColorContext.tsx";
 import {ArrowDown} from "lucide-react";
 import {Footer} from "./Footer.tsx";
+import 'aos/dist/aos.css';
 
 export function About() {
-
     const {color} = useColor()
 
     const themeColor = {
@@ -18,9 +18,16 @@ export function About() {
             <div
                 className="container mx-auto px-4 pt-18 pb-6 md:py-16"
                 style={{color: themeColor}}
+                data-aos="fade-left"
+                data-aos-delay="50"
             >
-                <h1 className="mb-6 text-4xl font-bold md:text-6xl">About Me</h1>
-                <p className="text-lg md:text-xl py-4 md:py-6" style={{opacity: 0.8}}>
+                <h1 className="mb-6 text-4xl font-bold md:text-6xl"
+                    data-aos="fade-left"
+                    data-aos-delay="50">About Me</h1>
+                <p className="text-lg md:text-xl py-4 md:py-6"
+                   style={{opacity: 0.8}}
+                   data-aos="fade-left"
+                   data-aos-delay="50">
                     I am an enthusiastic and driven undergraduate student at the Institute of Software Engineering
                     (IJSE) in Panadura,
                     pursuing a Bachelor's degree in Software Engineering. With a keen interest in web development, I am
@@ -37,7 +44,9 @@ export function About() {
                 </p>
                 <button type='button'
                         className="group mt-6 inline-flex items-center rounded-full px-12 py-3 text-sm bg-white/10 font-medium hover:bg-white/20 hover:cursor-pointer border"
-                        style={{borderColor: themeColor}}>
+                        style={{borderColor: themeColor}}
+                        data-aos="fade-up-left"
+                        data-aos-delay="50">
                     Download CV
                     <ArrowDown className="ml-2 h-4 w-4 transition-transform group-hover:translate-y-1"/>
                 </button>

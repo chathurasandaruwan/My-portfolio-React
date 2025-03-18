@@ -40,6 +40,8 @@ export function Education() {
             <div
                 className="container mx-auto px-4 pt-18 pb-6 md:py-16"
                 style={{color: themeColor}}
+                data-aos="fade-left"
+                data-aos-delay="50"
             >
                 {/*education details*/}
                 <h1 className="mb-6 text-2xl font-bold md:text-5xl">Educational Journey</h1>

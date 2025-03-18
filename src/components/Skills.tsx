@@ -76,6 +76,8 @@ export function Skills() {
             <div
                 className="container mx-auto px-4 pt-18 pb-6 md:py-16"
                 style={{color: themeColor}}
+                data-aos="fade-left"
+                data-aos-delay="50"
             >
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold mb-4">Technical Skills</h2>
