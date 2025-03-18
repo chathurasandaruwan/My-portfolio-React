@@ -14,65 +14,105 @@ export function Projects() {
 
     const [activeFilter, setActiveFilter] = useState("All")
 
-    const filters = ["All", "Web App", "Mobile", "UI/UX"]
+    const filters = ["All", "Web App", "Mobile", "UI/UX", 'Standard App']
 
     const projects = [
         {
-            title: "Modern E-commerce Platform",
+            title: "Modern Book Store",
             description:
-                "A fully responsive e-commerce platform with advanced filtering, cart functionality, and payment integration.",
-            image: "src/assets/gif/Project1.gif",
-            tags: ["React", "TypeScript", "Tailwind CSS", "Redux"],
+                "A fully responsive Book Store with advanced filtering, cart functionality, and payment integration.",
+            image: "src/assets/gif/project-1.gif",
+            tags: ["React", "TypeScript", "Tailwind CSS", "Redux","Node","Mysql","JWT"],
             category: "Web App",
             liveLink: "#",
             githubLink: "#",
         },
         {
-            title: "Creative Portfolio Website",
-            description: "A creative portfolio website with smooth animations and responsive design for a digital artist.",
-            image: "src/assets/gif/Project1.gif",
-            tags: ["React", "CSS Animations", "Tailwind CSS"],
-            category: "UI/UX",
-            liveLink: "#",
-            githubLink: "#",
-        },
-        {
-            title: "Task Management Dashboard",
-            description:
-                "A productivity app for managing tasks with drag-and-drop functionality and team collaboration features.",
-            image: "src/assets/gif/Project1.gif",
-            tags: ["React", "TypeScript", "Redux", "Firebase"],
+            title: "Book Store Admin Dashboard",
+            description: "An admin panel for managing books, orders, and users. Features include role-based authentication, analytics, and real-time updates.",
+            image: "src/assets/gif/project-2.gif",
+            tags: ["React", "TypeScript", "Tailwind CSS","Redux"],
             category: "Web App",
             liveLink: "#",
             githubLink: "#",
         },
         {
-            title: "Weather Visualization App",
+            title: "Book Store Admin Dashboard",
             description:
-                "A weather application that displays current and forecasted weather data with beautiful visual representations and interactive maps.",
-            image: "src/assets/gif/Project1.gif",
-            tags: ["React", "API Integration", "Chart.js", "Mapbox"],
-            category: "Web App",
-            liveLink: "#",
-            githubLink: "#",
-        },
-        {
-            title: "Mobile Fitness Tracker",
-            description:
-                "A cross-platform mobile app for tracking workouts, nutrition, and health metrics with personalized insights.",
-            image: "src/assets/gif/Project1.gif",
-            tags: ["React Native", "TypeScript", "Firebase", "Redux"],
+                "A simple mobile app created to manage book store data. Currently under development.",
+            image: "src/assets/gif/project-3.gif",
+            tags: ["React-Native", "TypeScript"],
             category: "Mobile",
             liveLink: "#",
             githubLink: "#",
         },
         {
-            title: "Restaurant Ordering System",
+            title: "Green Shadow",
             description:
-                "A complete ordering system for restaurants with real-time updates, menu management, and payment processing.",
-            image: "src/assets/gif/Project1.gif",
-            tags: ["React", "Node.js", "MongoDB", "Socket.io"],
+                "A crop monitoring log system designed to track plant health, store status as log, and optimize farming efficiency with a user-friendly UI.",
+            image: "src/assets/gif/project-4.gif",
+            tags: ["React", "Tailwind CSS", "TypeScript"],
+            category: "UI/UX",
+            liveLink: "#",
+            githubLink: "#",
+        },
+        {
+            title: "Pos System",
+            description:
+                "A Point-of-Sale system built with Spring and MySQL, offering product management, sales tracking, and invoice generation for retail businesses.",
+            image: "src/assets/gif/project-5.gif",
+            tags: ["HTML/CSS", "JavaScript","Boostrap CSS", "Spring","Mysql"],
             category: "Web App",
+            liveLink: "#",
+            githubLink: "#",
+        },
+        {
+            title: "Green Shadow Web",
+            description:
+                "A web-based version of the Green Shadow crop monitoring log system, with real-time data visualization and analysis.",
+            image: "src/assets/gif/project-4.gif",
+            tags: ["HTML/CSS", "JavaScript","Boostrap CSS", "Spring Boot","Mysql","JWT"],
+            category: "Web App",
+            liveLink: "#",
+            githubLink: "#",
+        },
+        {
+            title: "My Portfolio-V1",
+            description:
+                "A simple and elegant portfolio website showcasing my projects, skills, and experience using HTML and CSS.",
+            image: "src/assets/gif/project-7.gif",
+            tags: ["HTML/CSS"],
+            category: "UI/UX",
+            liveLink: "#",
+            githubLink: "#",
+        },
+        {
+            title: "Simple Calculator",
+            description:
+                "A basic calculator web application built with HTML, CSS, and JavaScript, supporting addition, subtraction, multiplication, and division.",
+            image: "src/assets/gif/project-8.gif",
+            tags: ["HTML/CSS","JavaScript"],
+            category: "UI/UX",
+            liveLink: "#",
+            githubLink: "#",
+        },
+        {
+            title: "Library Management System",
+            description:
+                "A JavaFX-based application for managing library books ,branches ,and borrow/return transactions using Hibernate and MySQL.",
+            image: "src/assets/gif/project-9.gif",
+            tags: ["JavaFX", "Scene Builder", "Mysql", "Hibernate"],
+            category: "Standard App",
+            liveLink: "#",
+            githubLink: "#",
+        },
+        {
+            title: "Tailor Shop Management System",
+            description:
+                "A desktop application designed to manage orders, customers, and invoices for tailor shops using JavaFX and MySQL.",
+            image: "src/assets/gif/project-10.gif",
+            tags: ["JavaFX", "Scene Builder", "Mysql"],
+            category: "Standard App",
             liveLink: "#",
             githubLink: "#",
         },

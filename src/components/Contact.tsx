@@ -38,7 +38,9 @@ export function Contact() {
 
                             <div className="flex items-center space-x-4">
                                 <MapPin className="w-6 h-6"/>
-                                <span>Yatadolawaththa, Mathugama, Sri Lanka</span>
+                                <span className="hover:text-white transition-colors">
+                                    Yatadolawaththa, Mathugama, Sri Lanka
+                                </span>
                             </div>
 
                             <div className="flex space-x-4 pt-4">
