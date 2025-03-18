@@ -50,7 +50,7 @@ export function Home() {
                     {/*social media links*/}
                     <div className="relative flex items-center space-x-5 gap-4 mt-8">
                         <a
-                            href="#"
+                            href="https://github.com/chathurasandaruwan"
                             className="p-2 rounded-full bg-background/80 hover:bg-white/20 border border-border/50 backdrop-blur-sm transition-colors"
                         >
                             <Github className="h-5 w-5"/>

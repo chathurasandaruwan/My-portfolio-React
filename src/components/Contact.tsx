@@ -52,7 +52,7 @@ export function Contact() {
                                     <Linkedin className="w-6 h-6 hover:cursor-pointer hover:scale-110"/>
                                 </a>
                                 <a
-                                    href="https://github.com"
+                                    href="https://github.com/chathurasandaruwan"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                 >
