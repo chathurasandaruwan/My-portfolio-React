@@ -62,21 +62,24 @@ export function Contact() {
                         </div>
 
                         {/* Contact Form */}
-                        <form className="space-y-4">
+                        <form action="https://getform.io/f/aqokvvpa" method="POST" className="space-y-4">
                             <input
                                 type="text"
+                                name="name"
                                 placeholder="Your Name"
                                 className="w-full px-4 py-2 bg-white/10 border  rounded-lg focus:outline-none focus:border-white/40 text-white placeholder-white/50"
                                 style={{borderColor: `${themeColor}6A`}}
                             />
                             <input
                                 type="email"
+                                name="email"
                                 placeholder="Your Email"
                                 className="w-full px-4 py-2 bg-white/10 border rounded-lg focus:outline-none focus:border-white/40 text-white placeholder-white/50"
                                 style={{borderColor: `${themeColor}6A`}}
                             />
                             <textarea
                                 placeholder="Your Message"
+                                name="message"
                                 rows={4}
                                 className="w-full px-4 py-2 bg-white/10 border rounded-lg focus:outline-none focus:border-white/40 text-white placeholder-white/50 resize-none"
                                 style={{borderColor: `${themeColor}6A`}}
