@@ -25,7 +25,7 @@ export function Projects() {
             tags: ["React", "TypeScript", "Tailwind CSS", "Redux","Node","Mysql","JWT"],
             category: "Web App",
             liveLink: "#",
-            githubLink: "#",
+            githubLink: "https://github.com/chathurasandaruwan/Book-Store-frontend-react.git",
         },
         {
             title: "Book Store Admin Dashboard",
@@ -34,7 +34,7 @@ export function Projects() {
             tags: ["React", "TypeScript", "Tailwind CSS","Redux"],
             category: "Web App",
             liveLink: "#",
-            githubLink: "#",
+            githubLink: "https://github.com/chathurasandaruwan/Book-Store-Admin-Panel-React.git",
         },
         {
             title: "Book Store Admin Dashboard",
@@ -44,7 +44,7 @@ export function Projects() {
             tags: ["React-Native", "TypeScript"],
             category: "Mobile",
             liveLink: "#",
-            githubLink: "#",
+            githubLink: "https://github.com/chathurasandaruwan/Book-Store-Admin-Panel-Mobile.git",
         },
         {
             title: "Green Shadow",
@@ -54,7 +54,7 @@ export function Projects() {
             tags: ["React", "Tailwind CSS", "TypeScript"],
             category: "UI/UX",
             liveLink: "#",
-            githubLink: "#",
+            githubLink: "https://github.com/chathurasandaruwan/Green-Shadow-Frontend-React.git",
         },
         {
             title: "Pos System",
@@ -64,7 +64,7 @@ export function Projects() {
             tags: ["HTML/CSS", "JavaScript","Boostrap CSS", "Spring","Mysql"],
             category: "Web App",
             liveLink: "#",
-            githubLink: "#",
+            githubLink: "https://github.com/chathurasandaruwan/POS-System-Main.git",
         },
         {
             title: "Green Shadow Web",
@@ -74,7 +74,7 @@ export function Projects() {
             tags: ["HTML/CSS", "JavaScript","Boostrap CSS", "Spring Boot","Mysql","JWT"],
             category: "Web App",
             liveLink: "#",
-            githubLink: "#",
+            githubLink: "https://github.com/chathurasandaruwan/Green-Shadow-Frontend.git",
         },
         {
             title: "My Portfolio-V1",
@@ -83,8 +83,8 @@ export function Projects() {
             image: "src/assets/gif/project-7.gif",
             tags: ["HTML/CSS"],
             category: "UI/UX",
-            liveLink: "#",
-            githubLink: "#",
+            liveLink: "https://chathurasandaruwan.github.io/MyPortfolio/",
+            githubLink: "https://github.com/chathurasandaruwan/MyPortfolio.git",
         },
         {
             title: "Simple Calculator",
@@ -94,7 +94,7 @@ export function Projects() {
             tags: ["HTML/CSS","JavaScript"],
             category: "UI/UX",
             liveLink: "#",
-            githubLink: "#",
+            githubLink: "https://github.com/chathurasandaruwan/Calculator-with-js.git",
         },
         {
             title: "Library Management System",
@@ -104,7 +104,7 @@ export function Projects() {
             tags: ["JavaFX", "Scene Builder", "Mysql", "Hibernate"],
             category: "Standard App",
             liveLink: "#",
-            githubLink: "#",
+            githubLink: "https://github.com/chathurasandaruwan/ORM-coursework-library-management-system.git",
         },
         {
             title: "Tailor Shop Management System",
@@ -114,7 +114,7 @@ export function Projects() {
             tags: ["JavaFX", "Scene Builder", "Mysql"],
             category: "Standard App",
             liveLink: "#",
-            githubLink: "#",
+            githubLink: "https://github.com/chathurasandaruwan/First-Semester-Final-T_shop.git",
         },
     ]
     const filteredProjects =
@@ -155,16 +155,18 @@ export function Projects() {
                                         />
                                     </div>
                                     <div className="absolute inset-0 bg-black/70 from-background/90 to-background/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                                        <button
+                                        <a
+                                            href={project.liveLink}
                                             className="p-2 rounded-full bg-background/20 backdrop-blur-sm border-white/40 text-white hover:bg-white/30 hover:cursor-pointer"
                                         >
                                             <ExternalLink className="h-5 w-5" />
-                                        </button>
-                                        <button
+                                        </a>
+                                        <a
+                                            href={project.githubLink}
                                             className="p-2 rounded-full bg-background/20 backdrop-blur-sm border-white/40 text-white hover:bg-white/30 hover:cursor-pointer"
                                         >
                                             <Github className="h-5 w-5" />
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                                 <div className="p-6">
