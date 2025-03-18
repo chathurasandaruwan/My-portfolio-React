@@ -102,7 +102,8 @@ export function Contact() {
                                 style={{borderColor: themeColor}}
                             >
                                 Send Message
-                                <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
+                                <ArrowRight
+                                    className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1"/>
                             </button>
                         </form>
                     </div>

@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import React, {useState, useEffect} from 'react';
+import {ChevronLeft, ChevronRight} from 'lucide-react';
 
 interface Certification {
     id: number;
@@ -86,7 +86,8 @@ export const CertificationSlider: React.FC = () => {
                         className="w-full h-full object-cover"
                     />
                     {/* Overlay with certification details */}
-                    <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
+                    <div
+                        className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6 text-white">
                         <h3 className="text-2xl font-bold mb-2">{certifications[currentIndex].title}</h3>
                         <div className="flex justify-between items-center">
                             <p className="text-sm opacity-90">{certifications[currentIndex].issuer}</p>
@@ -101,14 +102,14 @@ export const CertificationSlider: React.FC = () => {
                     className="absolute left-4 top-1/2 hover:cursor-pointer -translate-y-1/2 bg-white/20 hover:bg-white/30 backdrop-blur-sm p-2 rounded-full hover:scale-110"
                     aria-label="Previous slide"
                 >
-                    <ChevronLeft className="w-6 h-6 text-white" />
+                    <ChevronLeft className="w-6 h-6 text-white"/>
                 </button>
                 <button
                     onClick={nextSlide}
                     className="absolute right-4 top-1/2 -translate-y-1/2 hover:cursor-pointer bg-white/20 hover:bg-white/30 backdrop-blur-sm p-2 rounded-full hover:scale-110"
                     aria-label="Next slide"
                 >
-                    <ChevronRight className="w-6 h-6 text-white" />
+                    <ChevronRight className="w-6 h-6 text-white"/>
                 </button>
 
                 {/* Dots Navigation */}

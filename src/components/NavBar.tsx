@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import { useLocation } from "react-router-dom"
+import {useLocation} from "react-router-dom"
 import {Home, User, Briefcase, Menu, X, Mail, PersonStanding, GraduationCap} from "lucide-react"
 import {NavItem} from "./NavItem.tsx";
 
@@ -22,12 +22,12 @@ export default function Navbar() {
     }, [])
 
     const navItems = [
-        { id: "home", label: "Home", icon: <Home className="h-5 w-5" />, to: "/" },
-        { id: "about", label: "About Me", icon: <User className="h-5 w-5" />, to: "/about" },
-        { id: "skills", label: "Skills", icon: <PersonStanding className="h-5 w-5" />, to: "/skills" },
-        { id: "education", label: "Education", icon: <GraduationCap className="h-5 w-5" />, to: "/education" },
-        { id: "projects", label: "Projects", icon: <Briefcase className="h-5 w-5" />, to: "/projects" },
-        { id: "contact", label: "Contact", icon: <Mail className="h-5 w-5" />, to: "/contact" },
+        {id: "home", label: "Home", icon: <Home className="h-5 w-5"/>, to: "/"},
+        {id: "about", label: "About Me", icon: <User className="h-5 w-5"/>, to: "/about"},
+        {id: "skills", label: "Skills", icon: <PersonStanding className="h-5 w-5"/>, to: "/skills"},
+        {id: "education", label: "Education", icon: <GraduationCap className="h-5 w-5"/>, to: "/education"},
+        {id: "projects", label: "Projects", icon: <Briefcase className="h-5 w-5"/>, to: "/projects"},
+        {id: "contact", label: "Contact", icon: <Mail className="h-5 w-5"/>, to: "/contact"},
     ]
 
     const toggleMenu = () => {
@@ -41,7 +41,7 @@ export default function Navbar() {
                 className="fixed left-4 top-4 z-50 flex h-10 w-10 items-center justify-center rounded-full bg-black/50 text-white backdrop-blur-md md:hidden"
                 aria-label="Toggle menu"
             >
-                {isOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+                {isOpen ? <X className="h-5 w-5"/> : <Menu className="h-5 w-5"/>}
             </button>
 
             <nav
@@ -52,7 +52,8 @@ export default function Navbar() {
                 <div className="flex flex-col items-center gap-6 mt-16">
                     {navItems.map((item) => (
                         <div key={item.id} className="group relative">
-                            <NavItem icon={item.icon} label={item.label} to={item.to} active={location.pathname === item.to} />
+                            <NavItem icon={item.icon} label={item.label} to={item.to}
+                                     active={location.pathname === item.to}/>
                         </div>
                     ))}
                 </div>

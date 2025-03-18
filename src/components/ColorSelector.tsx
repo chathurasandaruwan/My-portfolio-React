@@ -4,20 +4,20 @@ import {Color, useColor} from "../context/ColorContext.tsx";
 
 export function ColorSelector() {
     const [isOpen, setIsOpen] = useState(false);
-    const { setColor } = useColor()
+    const {setColor} = useColor()
 
     const colors = [
-        { value: "white", label: "White" },
-        { value: "green", label: "Green" },
-        { value: "yellow", label: "Yellow" },
-        { value: "blue", label: "Blue" },
+        {value: "white", label: "White"},
+        {value: "green", label: "Green"},
+        {value: "yellow", label: "Yellow"},
+        {value: "blue", label: "Blue"},
     ];
 
     return (
         <div
             className={"fixed group  right-4 top-4 z-40 bg-white/20 text-white backdrop-blur-md flex h-12 w-12 items-center justify-center rounded-full transition-all duration-300 hover:bg-white/10 hover:cursor-pointer"}
             aria-label={'Change-Theme'}
-            onClick={()=>setIsOpen(!isOpen)}
+            onClick={() => setIsOpen(!isOpen)}
         >
             <Palette className="h-5 w-5"/>
             <span
@@ -38,7 +38,7 @@ export function ColorSelector() {
                             >
                                 <div
                                     className="h-4 w-4 rounded-full"
-                                    style={{ backgroundColor: color.value }}
+                                    style={{backgroundColor: color.value}}
                                 />
                                 <span className="text-sm text-white">{color.label}</span>
                             </div>
