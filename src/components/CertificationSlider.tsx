@@ -13,35 +13,35 @@ const certifications: Certification[] = [
     {
         id: 1,
         title: "Innovesta '23",
-        image: "src/assets/images/certification1.jpg",
+        image: "/images/certification1.jpg",
         issuer: "IJSE Innovesta",
         date: "2023"
     },
     {
         id: 2,
         title: "First place in term test",
-        image: "src/assets/images/certification2.jpg",
+        image: "/images/certification2.jpg",
         issuer: "Kamburawala College",
         date: "2017"
     },
     {
         id: 3,
         title: "Second place in term test",
-        image: "src/assets/images/certification3.jpg",
+        image: "/images/certification3.jpg",
         issuer: "Kamburawala College",
         date: "2017"
     },
     {
         id: 4,
         title: "Second place in term test",
-        image: "src/assets/images/certification4.jpg",
+        image: "/images/certification4.jpg",
         issuer: "Kamburawala College",
         date: "2017"
     },
     {
         id: 5,
         title: "Prefect in School",
-        image: "src/assets/images/certification5.jpg",
+        image: "/images/certification5.jpg",
         issuer: "Kamburawala College",
         date: "2019-2020"
     }

@@ -18,19 +18,19 @@ export function Education() {
         {
             content: 'Completed O/L with excellent results at Kamburawala National Collage.',
             name: 'Kamburawala National Collage',
-            imgSrc: 'src/assets/images/Scl-Img.png',
+            imgSrc: '/images/Scl-Img.png',
             company: 'Secondary Education(2007-2017)'
         },
         {
             content: 'Completed A/L with excellent results at Kamburawala National Collage.',
             name: 'Kamburawala National Collage',
-            imgSrc: 'src/assets/images/Scl-Img.png',
+            imgSrc: '/images/Scl-Img.png',
             company: 'Secondary Education(2017-2020)'
         },
         {
             content: 'Currently pursuing a Diploma in Software Engineering at IJSE, gaining strong fundamentals and hands-on experience.',
             name: 'Institute of Java Software Engineering (IJSE)',
-            imgSrc: 'src/assets/images/IJSE-images.png',
+            imgSrc: '/images/IJSE-images.png',
             company: 'Higher Education (2023-2025)'
         }
     ];
